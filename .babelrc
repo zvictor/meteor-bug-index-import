@@ -1,0 +1,22 @@
+{
+  "presets": [
+    "es2015",
+    "es2016",
+    "react",
+    "stage-1"
+  ],
+  "env": {
+    "test": {
+      "plugins": [
+        ["babel-plugin-root-import", {
+          "rootPathPrefix": "/",
+          "rootPathSuffix": "./"
+        }],
+        ["transform-runtime", {
+          "polyfill": false,
+          "regenerator": true
+        }]
+      ]
+    }
+  }
+}
